@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#081321;
+    color:#ffffff;
+    line-height:1.7;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:#0d1b2a;
+    border-bottom:1px solid rgba(255,255,255,.08);
+    z-index:1000;
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo h2{
+    color:#f3c14b;
+    font-weight:800;
+    letter-spacing:1px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:30px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#f3c14b;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#081321,#11253d,#1a3557);
+}
+
+.hero h1{
+    font-size:60px;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    color:#d6d6d6;
+    margin-bottom:40px;
+}
+
+.button{
+    display:inline-block;
+    padding:16px 38px;
+    background:#f3c14b;
+    color:#081321;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 15px 30px rgba(243,193,75,.35);
+}
+
+section{
+    padding:100px 0;
+}
+
+section h2{
+    font-size:40px;
+    color:#f3c14b;
+    margin-bottom:30px;
+}
+
+ul{
+    list-style:none;
+}
+
+ul li{
+    margin:15px 0;
+    font-size:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:30px;
+}
+
+table td{
+    border:1px solid rgba(255,255,255,.1);
+    padding:18px;
+}
+
+footer{
+    background:#06111d;
+    text-align:center;
+    padding:40px;
+    color:#bfbfbf;
+}
+
+@media(max-width:900px){
+
+header .container{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:20px;
+}
+
+nav a{
+    display:block;
+    margin:10px 0;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+section h2{
+    font-size:30px;
+}
+
+}
