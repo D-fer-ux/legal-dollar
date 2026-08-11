@@ -45,8 +45,8 @@ header .container{
 }
 
 .logo-img{
-    width:75px;
-    height:75px;
+    width:35px;
+    height:35px;
     margin:0;
     border-radius:50%;
     object-fit:cover;
